@@ -1,11 +1,20 @@
 
+:root {
+    --font-family: "Nunito";
+}
+
 *, ::after, ::before {
 	box-sizing: border-box;
 }
 
 html {
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-family);
 }
 
 blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
@@ -32,8 +41,8 @@ blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, 
     border: 2px solid burlywood;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .logo-wrap {
@@ -44,12 +53,12 @@ blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, 
     align-items: center;
 }
 
-/* .logo {
+.logo {
     width: 100px;
     height: 80px;
     background-color: lightblue;
-    border: 1px solid black;
-} */
+    /* border: 1px solid black; */
+}
 
 .logo-text {
     border: 2px solid gray;
@@ -160,6 +169,10 @@ li {
 @media only screen and (orientation: landscape) {
     
     .site-container {
+        background-color: beige;
+    }
+
+    /* .site-container {
         border: 2px solid black;
         display: flex;
         flex-direction: column;
@@ -174,12 +187,9 @@ li {
         border: 2px solid burlywood;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
     }
     
     .logo-wrap {
-        /* flex-basis: 100%; */
         border: 5px solid black;
         display: flex;
         flex-direction: column;
@@ -198,7 +208,7 @@ li {
         border: 2px solid gray;
     }
     
-  /*  .menu {
+   .menu {
         border: 2px solid lightseagreen;
         display: none;
     }
@@ -213,7 +223,7 @@ li {
     
     /* Main */
     
-    .main {
+    /* .main {
         border: 2px solid blue;
     }
     
@@ -235,11 +245,11 @@ li {
     
     .main-content {
         border: 2px solid black;
-    }
+    } */
     
     /* We */
     
-    .we-first {
+    /* .we-first {
         border: 2px solid lightgreen;
     }
     
@@ -253,25 +263,26 @@ li {
     
     .we-golive {
         border: 2px solid lightseagreen;
-    }
+    } */
     
     /* Works */
     
-    .main-links {
+    /* .main-links {
         border: 2px solid red;
-    }
+    } */
     
-    .first {                                  /* Class common to Contact */
+    /* Class common to Contact */
+    /* .first {                                  
         border: 2px solid lightgreen
     }
     
     .cell-1 {
         border: 2px solid lightcoral;
-    }
+    } */
     
     /* Contact */
     
-    .contact-all {
+    /* .contact-all {
         border: 2px solid blue;
     }
     
@@ -281,13 +292,13 @@ li {
     
     .contact {
         border: 2px solid greenyellow;
-    }
+    } */
     
     /* Footer */
     
-    .footer {
+    /* .footer {
         border: 2px solid green;
-    }
+    } */
 }
 
 
@@ -384,17 +395,20 @@ li {
 
 /* Desktop */
 
-/* @media only screen and (min-width: 930px) {
+@media only screen and (min-width: 930px) {
 
     .site-container {
+        background-color: lightgreen;
+    }
+
+    /* .site-container {
         border: 2px solid black;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background-color: beige;
-    }
+    } */
     
-    .header {
+    /* .header {
         border: 2px solid red;
     }
     
@@ -427,9 +441,9 @@ li {
     .menu {
         border: 2px solid lightseagreen;
         display: block;
-    }
+    }  */
     
-    .main {
+/*    .main {
         border: 2px solid blue;
     }
     
@@ -485,8 +499,8 @@ li {
 
     /* Footer */
 
-    /* .footer {
+    /* footer {
         border: 2px solid green;
-    }
+    } */
 
-} */
+}
