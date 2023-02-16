@@ -1,6 +1,14 @@
 
 :root {
+    --color-text-primary: #181818; 
+    --background-primary: #FFFFFF; 
     --font-family: "Nunito";
+    --font-size-xxsmall: 12px;
+    --font-size-xsmall: 14px;
+    --font-size-small: 16px; 
+    --font-size-base: 18px;
+    --line-height-base: 1.5555555556;
+    --space-32: 32px;
 }
 
 *, ::after, ::before {
@@ -14,7 +22,12 @@ html {
 }
 
 body {
+    direction: ltr;
     font-family: var(--font-family);
+    color: var(--color-text-primary);
+    background-color: var(--background-primary);
+    /* font-size: var(--font-size-base); */
+    line-height: var(--line-height-base);
 }
 
 blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
@@ -35,6 +48,7 @@ blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, 
 
 .header {
     border: 2px solid red;
+    /* font-size: var(--font-size-small); */
 }
 
 .nav-wrap {
@@ -62,6 +76,10 @@ blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, 
 
 .logo-text {
     border: 2px solid gray;
+    font-size: var(--font-size-xxsmall);
+    text-align: center;
+    margin: var(--space-32);
+    padding: var(--space-32);
 }
 
 /* .menu {
