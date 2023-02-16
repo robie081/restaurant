@@ -1,0 +1,153 @@
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Mobile First */
+
+.site-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    border: 2px solid red;
+}
+
+.nav-wrap {
+    border: 2px solid burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.menu {
+    border: 2px solid lightseagreen;
+    display: none;
+}
+
+.nav {
+    border: 2px solid lightcoral;
+}
+
+li {
+    border: 2px solid black;
+}
+
+.main {
+    border: 2px solid blue;
+}
+
+.footer {
+    border: 2px solid green;
+}
+
+
+
+
+@media only screen and (orientation: landscape) {
+    
+    .site-container {
+      background-color: lightblue;
+    }
+
+    .header {
+        border: 2px solid red;
+    }
+    
+    .nav-wrap {
+        border: 2px solid burlywood;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 100px;
+        background-color: lightgreen;
+        border: none;
+    }
+    
+    .menu {
+        border: 2px solid lightseagreen;
+        display: block;
+    }
+    
+    .main {
+        border: 2px solid blue;
+    }
+    
+    .footer {
+        border: 2px solid green;
+    }
+}
+
+
+
+
+
+/* Desktop */
+
+@media only screen and (min-width: 930px) {
+
+    .site-container {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: beige;
+    }
+    
+    .header {
+        border: 2px solid red;
+    }
+    
+    .nav-wrap {
+        border: 2px solid burlywood;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 100px;
+        background-color: lightgreen;
+        border: none;
+    }
+    
+    .menu {
+        border: 2px solid lightseagreen;
+        display: block;
+    }
+    
+    .main {
+        border: 2px solid blue;
+    }
+    
+    .footer {
+        border: 2px solid green;
+    }
+
+}
