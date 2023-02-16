@@ -160,6 +160,10 @@ li {
 @media only screen and (orientation: landscape) {
     
     .site-container {
+        background-color: beige;
+    }
+
+    /* .site-container {
         border: 2px solid black;
         display: flex;
         flex-direction: column;
@@ -174,12 +178,9 @@ li {
         border: 2px solid burlywood;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
     }
     
     .logo-wrap {
-        /* flex-basis: 100%; */
         border: 5px solid black;
         display: flex;
         flex-direction: column;
@@ -196,7 +197,7 @@ li {
     
     .logo-text {
         border: 2px solid gray;
-    }
+    } */
     
   /*  .menu {
         border: 2px solid lightseagreen;
@@ -213,7 +214,7 @@ li {
     
     /* Main */
     
-    .main {
+    /* .main {
         border: 2px solid blue;
     }
     
@@ -235,11 +236,11 @@ li {
     
     .main-content {
         border: 2px solid black;
-    }
+    } */
     
     /* We */
     
-    .we-first {
+    /* .we-first {
         border: 2px solid lightgreen;
     }
     
@@ -253,25 +254,26 @@ li {
     
     .we-golive {
         border: 2px solid lightseagreen;
-    }
+    } */
     
     /* Works */
     
-    .main-links {
+    /* .main-links {
         border: 2px solid red;
-    }
+    } */
     
-    .first {                                  /* Class common to Contact */
+    /* Class first is common to Contact */
+    /* .first {                                  
         border: 2px solid lightgreen
     }
     
     .cell-1 {
         border: 2px solid lightcoral;
-    }
+    } */
     
     /* Contact */
     
-    .contact-all {
+    /* .contact-all {
         border: 2px solid blue;
     }
     
@@ -281,13 +283,13 @@ li {
     
     .contact {
         border: 2px solid greenyellow;
-    }
+    } */
     
     /* Footer */
     
-    .footer {
+    /* .footer {
         border: 2px solid green;
-    }
+    } */
 }
 
 
@@ -384,9 +386,13 @@ li {
 
 /* Desktop */
 
-/* @media only screen and (min-width: 930px) {
+@media only screen and (min-width: 930px) {
 
     .site-container {
+        background-color: lightskyblue;
+    }
+
+/*    .site-container {
         border: 2px solid black;
         display: flex;
         flex-direction: column;
@@ -488,5 +494,5 @@ li {
     /* .footer {
         border: 2px solid green;
     }
-
-} */
+*/
+} 
