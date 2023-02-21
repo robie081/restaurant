@@ -86,10 +86,6 @@ h3 {
 /* Header */
 
 .header {
-    /* border: 2px solid red; */
-    /* font-size: var(--font-size-small); */
-    /* margin: 10px; */
-    /* padding: 10px; */
     padding-bottom: var(--space-64);
 }
 
