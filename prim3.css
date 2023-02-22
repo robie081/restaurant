@@ -242,9 +242,11 @@ li {
     filter: opacity(70%);
 }
 
-/* .contact {
-    border: 2px solid greenyellow;
-} */
+.contact p:nth-child(2) {
+    /* border: 2px solid greenyellow; */
+    text-decoration: none;
+    /* font-size: 1.05em; */
+}
 
 /* Footer */
 
@@ -339,6 +341,11 @@ li {
     .title {
         border: 2px solid lightcoral;
     } */
+    .content-wrap {
+        /* border: 2px solid violet; */
+        padding: 0 var(--space-32) 0 var(--space-32);
+    }
+    
     
     .main-content {
         /* border: 2px solid black; */
