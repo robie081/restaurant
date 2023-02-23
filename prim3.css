@@ -3,6 +3,8 @@
     --color-text-primary: #181818; 
     --background-primary: #FFFFFF; 
     --color-para-font: #666666; 
+    /* --ghost-color: #8b19d7; */
+    --ghost-color: #780dbe;     
     --font-family: "Nunito", sans-serif;
     --font-family-Inter: "Inter", sans-serif;
     --font-family-Raleway: "Raleway", sans-serif;
@@ -77,7 +79,7 @@ h3 {
 /* Mobile First */
 
 .site-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -220,6 +222,7 @@ li {
 .cell-1 a {
     text-decoration: none;
     font-size: var(--font-size-base);
+    color: var(--ghost-color);
 }
 
 /* Contact */
@@ -255,13 +258,7 @@ li {
 } */
 
 
-
-
 @media only screen and (orientation: landscape) {
-    
-    /* .site-container {
-        background-color: beige;
-    } */
 
     h1, h2, h3 {
         font-size: 1.05rem;
@@ -271,233 +268,17 @@ li {
         font-size: var(--font-size-larger);
     }
 
-    /* .site-container {
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    .header {
-        border: 2px solid red;
-    }
-    
-    .nav-wrap {
-        border: 2px solid burlywood;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .logo-wrap {
-        border: 5px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logo {
-        width: 100px;
-        height: 80px;
-        background-color: lightblue;
-        border: 1px solid black;
-    }
-    
-    .logo-text {
-        border: 2px solid gray;
-    }
-    
-   .menu {
-        border: 2px solid lightseagreen;
-        display: none;
-    }
-    
-    .nav {
-        border: 2px solid lightcoral;
-    }
-    
-    li {
-        border: 2px solid black;
-    } */
-    
-    /* Main */
-    
-    /* .main {
-        border: 2px solid blue;
-    }
-    
-    .main-wrap {
-        border: 2px solid yellow;
-    }
-    
-    .content-wrap {
-        border: 2px solid violet;
-    }
-    
-    .main-header {
-        border: 2px solid lightskyblue;
-    }
-    
-    .title {
-        border: 2px solid lightcoral;
-    } */
     .content-wrap {
         /* border: 2px solid violet; */
         padding: 0 var(--space-32) 0 var(--space-32);
     }
-    
     
     .main-content {
         /* border: 2px solid black; */
         /* font-size: var(--font-size-smaller); */
         font-size: 1.05em;
     }
-    
-    /* We */
-    
-    /* .we-first {
-        border: 2px solid lightgreen;
-    }
-    
-    .we-design {
-        border: 2px solid lightskyblue;
-    }
-    
-    .we-develop {
-        border: 2px solid lightcoral;
-    }
-    
-    .we-golive {
-        border: 2px solid lightseagreen;
-    } */
-    
-    /* Works */
-    
-    /* .main-links {
-        border: 2px solid red;
-    } */
-    
-    /* Class common to Contact */
-    /* .first {                                  
-        border: 2px solid lightgreen
-    }
-    
-    .cell-1 {
-        border: 2px solid lightcoral;
-    } */
-    
-    /* Contact */
-    
-    /* .contact-all {
-        border: 2px solid blue;
-    }
-    
-    .photo {
-        border: 2px solid rebeccapurple;
-    }
-    
-    .contact {
-        border: 2px solid greenyellow;
-    } */
-    
-    /* Footer */
-    
-    /* .footer {
-        border: 2px solid green;
-    } */
 }
-
-
-/* Tablet */
-
-/* @media only screen and (min-width: 530px) and (max-width: 930px) {
-    
-    .site-container {
-      border: 2px solid black;
-    }
-
-    .header {
-        border: 2px solid red;
-    }
-    
-    .nav-wrap {
-        border: 2px solid burlywood;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo-wrap {
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logo {
-        width: 120px;
-        height: 100px;
-        background-color: lightgreen;
-        border: none;
-    }
-
-    .logo-text {
-        border: 2px solid gray;
-    }
-    
-    .menu {
-        border: 2px solid lightseagreen;
-        display: block;
-        display: flex;
-    }
-    
-    .main {
-        border: 2px solid blue;
-    }
-    
-    .main-wrap {
-        border: 2px solid yellow;
-    }
-
-    .content-wrap {
-        border: 2px solid violet;
-    }
-    
-    .main-header {
-        border: 2px solid lightskyblue;
-    }
-    
-    .title {
-        border: 2px solid lightcoral;
-    }
-    
-    .main-content {
-        border: 2px solid black;
-    }
-    
-    .we-first {
-        border: 2px solid lightgreen;
-    }
-    
-    .we-design {
-        border: 2px solid lightskyblue;
-    }
-    
-    .we-develop {
-        border: 2px solid lightcoral;
-    }
-    
-    .we-golive {
-        border: 2px solid lightseagreen;
-    }
-
-    .footer {
-        border: 2px solid green;
-    }
-} */
-
-
 
 /* Desktop */
 
@@ -514,58 +295,10 @@ li {
     h1 {
         font-size: 1.5rem;
     }
-
-    /* .site-container {
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    } */
-    
-    /* .header {
-        border: 2px solid red;
-    }
-    
-    .nav-wrap {
-        border: 2px solid burlywood;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .logo-wrap {
-        border: 12px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo {
-        width: 120px;
-        height: 100px;
-        background-color: lightgreen;
-        border: none;
-    }
-    
-    .logo-text {
-        border: 2px solid gray;
-    }
-
-    .menu {
-        border: 2px solid lightseagreen;
-        display: block;
-    }  */
     
    .main {
         /* border: 2px solid blue; */
         padding: var(--space-40) 0;
-        /* background-color: aliceblue; */
-        /* max-width: 80%; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: centesr; */
     }
 
     .main-wrap {
