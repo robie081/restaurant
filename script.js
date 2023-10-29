@@ -1,38 +1,26 @@
 
-// The Button is Different You Stupid
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
 
+    burger.addEventListener('click', () => {
+        // Toggle Nav
+        nav.classList.toggle('nav-active');
 
-// document.getElementById("ro").style.display = "none";
+        // Animate Links
+        navLinks.forEach((link, index) => {
+            // console.log(index);
+            // console.log(index / 7);
+            if (link.style.animation)
+                link.style.animation = '';
+            else
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+        });
 
-function changeLangRo() {
-
-    const myBttnRo = document.getElementById('bttnRo').innerHTML;
-
-    if (myBttnRo.match("ro")) {
-        
-        // document.getElementById('bttnRo').innerHTML = "en";
-        document.getElementById("ro").style.display = "block";
-        document.getElementById("en").style.display = "none";
-
-        console.log('rom');
-
-    }    
+        // Burger Animation
+        burger.classList.toggle('change');
+    });
 }
 
-// document.getElementById('bttnRo').addEventListener('click', changeLangRo);
-
-function changeLangEn() {
-
-    const myBttnEn = document.getElementById('bttnEn').innerHTML;
-
-    if (myBttnEn.match("en")) {
-        // document.getElementById('bttnEn').innerHTML = "ro";
-        document.getElementById("en").style.display = "block";
-        document.getElementById("ro").style.display = "none";   
-
-        console.log('eng');
-    } 
-}
-
-document.getElementById('bttnRo').addEventListener('click', changeLangRo);
-document.getElementById('bttnEn').addEventListener('click', changeLangEn);
+navSlide();
