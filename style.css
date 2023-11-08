@@ -5,7 +5,14 @@
     padding: 0;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
+    /* border: 2px solid black; */
     background-image: url('aurora.jpeg');
     /* background: no-repeat; */
     /* background-size: cover; */
@@ -125,11 +132,13 @@ nav {
 }
 
 .change .one {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    /* transform: rotate(-45deg) translate(-5px, 6px); */
+    transform: rotate(45deg) translate(5px, 6px);
 }
 .change .two {
     opacity: 0;
 }
 .change .three {
-    transform: rotate(45deg) translate(-5px, -6px);
+    /* transform: rotate(45deg) translate(-5px, -6px); */
+    transform: rotate(-45deg) translate(5px, -6px);
 }
