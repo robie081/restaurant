@@ -1,135 +1,176 @@
 
+/* Casa Lupu */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    /* background-image: url('aurora.jpeg'); */
-    /* background: no-repeat; */
-    /* background-size: cover; */
-}
-
-nav {
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    border: 2px solid black;
+    height: 80vh;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+  }
+  
+  nav {
+    /* border: 2px solid lightblue; */
+    min-height: 10vh;
+    padding: 1rem;
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
-    padding: 0 2rem;
-    /* background-color: #ccc; */
-    font-family: 'Raleway', sans-serif;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-weight: 400;
-    /* border-bottom: 1px solid #9ca3af; */
-}
-
-.logo {
-    color: #1f2937;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 1.25rem;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    /* width: 45%; */
-    flex-basis: 45%;
-}
-
-.nav-links li {
-    list-style: none;
-}
-
-.nav-links a {
-    color: #1f2937;
-    /* color: #e5e7eb; */
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: 600;
-}
-
-.burger {
+  
+    box-shadow: 0 0 5px 0 lightgray;
+  }
+  
+  .desktop {
     display: none;
-}
-
-.burger div {
-    width: 26px;
-    height: 1px;
-    background-color: #1f2937;
-    border-radius: 5px;
-    margin: 7px auto;
-    transition: all 0.3s ease-in;
-}
-
-@media screen and (max-width: 1024px) {
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #030712;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    /* border: 2px solid silver; */
+    position: relative;
+    top: 12%;
+    width: 80%;
+    margin-left: 1.75rem;
+  }
+  
+  .overlay-content ul li {
+    /* border: 2px solid silver; */
+    width: inherit;
+    list-style: none;
+    border-bottom: 1px solid #3f3f46;
+  }
+  
+  .overlay-content ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .overlay-content a {
+    padding: 0.875rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay-content .active a {
+    color: #f1f1f1;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .cross {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+  }
+  
+  .cross:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .hamburger {
+    /* border: 1px solid plum; */
+    width: 20px;
+    height: 12px;
+    background-image: url(/menus/casaLupuOverlay/assets/hamburger.png);
+    cursor: pointer;
+    background-size: 20px 12px !important;
+  
+    margin-right: 1.5rem;
+  }
+  
+  .cross {
+    /* border: 1px solid plum; */
+    width: 14px;
+    height: 15px;
+    background-image: url(/menus/casaLupuOverlay/assets/cross.png);
+    cursor: pointer;
+    background-size: 14px 15px !important;
+  }
+  
+  main {
+    height: 80vh;
+  }
+  
+  main div {
+    margin: 1rem;
+  }
+  
+  @media screen and (min-width: 640px) {
+  
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+  
+   .hamburger {
+        display: none;
+    }
+  
+    .desktop {
+      /* border: 2px solid plum; */
+      display: block;
+      width: 40%;
+    }
+  
+    .desktop ul {
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .desktop ul li {
+      /* border: 2px solid orange; */
+      list-style: none;
+    }
+  
+    .desktop ul li a {
+      text-decoration: none;
+      color: #4b5563;
+    }
+  
+    .desktop .active a {
+      color: #1f1f1f;
+    }
     
-    .nav-links {
-        width: 50%;
-        /* flex-basis: 50%; */
+    .desktop a:hover {
+      color: #1f1f1f;
     }
-
-    .nav-links a {
-        font-weight: 400;
+  
+  }
+  
+  @media screen and (min-width: 1040px) {
+  
+    .desktop ul {
+      justify-content: space-evenly;
     }
-}
-
-@media screen and (max-width: 768px) {
-    
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-links {
-        /* background-color: bisque; */
-        position: absolute;
-        right: 0;
-        height: 92vh;
-        top: 8vh;
-        /* height: 100vh; */
-        /* top: 0; */
-        /* background-color: #e5e7eb; */
-        /* border-left: 1px solid #9ca3af; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-basis: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-
-    .burger {
-        display: block;  
-        cursor: pointer;
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.change .one {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.change .two {
-    opacity: 0;
-}
-.change .three {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+  }
