@@ -53,7 +53,7 @@
     /* border: 2px solid silver; */
     position: relative;
     top: 12%;
-    width: 60%;
+    width: 83%;
     margin-left: 1.75rem;
   }
   
@@ -128,7 +128,7 @@
     
     .overlay .cross {
       position: absolute;
-      top: 2rem;
+      top: 1rem;
       right: 2.5rem;
     }
   }
