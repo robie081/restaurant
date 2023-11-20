@@ -100,7 +100,7 @@
     /* border: 1px solid plum; */
     width: 20px;
     height: 12px;
-    background-image: url(/menus/casaLupuOverlay/assets/hamburger.png);
+    background-image: url(/prim/assets/hamburger.png);
     cursor: pointer;
     background-size: 20px 12px !important;
   
@@ -111,7 +111,7 @@
     /* border: 1px solid plum; */
     width: 14px;
     height: 15px;
-    background-image: url(/menus/casaLupuOverlay/assets/cross.png);
+    background-image: url(/prim/assets/cross.png);
     cursor: pointer;
     background-size: 14px 15px !important;
   }
