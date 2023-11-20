@@ -50,7 +50,7 @@
   }
   
   .overlay-content {
-    /* border: 2px solid silver; */
+    border: 2px solid silver;
     position: relative;
     top: 12%;
     width: 80%;
@@ -126,6 +126,10 @@
   
   @media screen and (min-width: 640px) {
     
+    .overlay-content {
+      margin-left: 2rem;
+    }
+
     .overlay .cross {
       position: absolute;
       top: 2rem;

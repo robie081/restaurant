@@ -18,7 +18,7 @@ const navSlideOverlay = () => {
     }
     
     hamburger.addEventListener('click', () => {
-        myNav.style.width = "22rem";
+        myNav.style.width = "20rem";
         logo.style.opacity = 0.5;
         main.style.opacity = 0.5;
         desktop.style.opacity = 0.5;
