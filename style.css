@@ -24,7 +24,7 @@
   
   nav {
     /* border: 2px solid lightblue; */
-    min-height: 10vh;
+    min-height: 11vh;
     padding: 1rem;
     font-family: "Cabin", Arial, sans-serif;
     font-weight: 600;
@@ -36,6 +36,13 @@
     box-shadow: 0 0 5px 0 lightgray;
   }
   
+  .logo {
+    width: 203px;
+    height: 56px;
+    background-image: url(/prim/assets/logo_color.png);
+    background-size: 203px 56px !important;
+  }
+
   .desktop {
     display: none;
   }
@@ -47,7 +54,8 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #030712;
+    /* background-color: #030712; */
+    background-image: url(/prim/assets/off-canves-full--bg.jpeg);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -148,6 +156,13 @@
         display: none;
     }
   
+    .logo {
+      width: 174px;
+      height: 48px;
+      background-image: url(/prim/assets/logo_color.png);
+      background-size: 174px 48px !important;
+    }
+
     .desktop {
       /* border: 2px solid plum; */
       display: block;
