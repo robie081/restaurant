@@ -16,15 +16,18 @@
   body {
     border: 2px solid black;
     height: 80vh;
+    font-family: "Open Sans", Arial, sans-serif;
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 400;
   }
   
   nav {
     /* border: 2px solid lightblue; */
     min-height: 10vh;
     padding: 1rem;
+    font-family: "Cabin", Arial, sans-serif;
+    font-weight: 600;
   
     display: flex;
     justify-content: space-between;
@@ -52,7 +55,7 @@
   .overlay-content {
     /* border: 2px solid silver; */
     position: relative;
-    top: 12%;
+    top: 14%;
     width: 80%;
     margin-left: 1.75rem;
   }
@@ -178,9 +181,20 @@
   
   }
   
-  @media screen and (min-width: 1040px) {
+  @media screen and (min-width: 1024px) {
   
+    .desktop {
+      width: 38%;
+    }
+
     .desktop ul {
       justify-content: space-evenly;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+
+    .desktop {
+      width: 36%;
     }
   }
