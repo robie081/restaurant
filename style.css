@@ -26,7 +26,7 @@
     /* border: 2px solid lightblue; */
     min-height: 11vh;
     padding: 1rem;
-    font-family: "Cabin", Arial, sans-serif;
+    font-family: "Cabin";
     font-weight: 600;
   
     display: flex;
@@ -37,10 +37,10 @@
   }
   
   .logo {
-    width: 203px;
-    height: 56px;
+    width: 145px;
+    height: 40px;
     background-image: url(/prim/assets/logo_color.png);
-    background-size: 203px 56px !important;
+    background-size: 145px 40px !important;
   }
 
   .desktop {
