@@ -40,8 +40,8 @@
   }
   
   .logo {
-    width: 174px;
-    height: 48px;
+    width: 158px;
+    height: 44px;
     background-image: url(/prim/assets/logo_color.png);
     background-size: 174px 48px !important;
     cursor: pointer;
