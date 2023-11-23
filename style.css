@@ -1,5 +1,5 @@
 
-/* Casa Lupu */
+/* Casa Lupu Overlay and Sticky Navbar -- Second -- with Scrolling Allowed*/
 
 * {
     box-sizing: border-box;
@@ -68,7 +68,7 @@
     /* border: 2px solid silver; */
     position: relative;
     /* top: 14%; */
-    top: 6.3rem;
+    top: 5.5rem;
     width: 80%;
     margin-left: 1.75rem;
   }
@@ -196,18 +196,24 @@
    .hamburger {
         display: none;
     }
+
+    /* .overlay {
+      display: none;
+    } */
   
     .logo {
       width: 174px;
       height: 48px;
       background-image: url(/prim/assets/logo_color.png);
       background-size: 174px 48px !important;
+      /* opacity: 1; */
     }
 
     .desktop {
       /* border: 2px solid plum; */
       display: block;
       width: 40%;
+      /* opacity: 1; */
     }
   
     .desktop ul {
@@ -234,6 +240,10 @@
     .desktop a:hover {
       color: #1f1f1f;
     }
+
+    /* .content {
+      opacity: 1;
+    } */
   
   }
   
