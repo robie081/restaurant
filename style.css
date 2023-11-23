@@ -179,6 +179,7 @@
   @media screen and (min-width: 640px) {
     
     .overlay-content {
+      top: 5rem;
       width: 70%;
       margin-left: 3rem;
     }
@@ -196,24 +197,18 @@
    .hamburger {
         display: none;
     }
-
-    /* .overlay {
-      display: none;
-    } */
   
     .logo {
       width: 174px;
       height: 48px;
       background-image: url(/prim/assets/logo_color.png);
       background-size: 174px 48px !important;
-      /* opacity: 1; */
     }
 
     .desktop {
       /* border: 2px solid plum; */
       display: block;
       width: 40%;
-      /* opacity: 1; */
     }
   
     .desktop ul {
@@ -240,11 +235,6 @@
     .desktop a:hover {
       color: #1f1f1f;
     }
-
-    /* .content {
-      opacity: 1;
-    } */
-  
   }
   
   @media screen and (min-width: 1024px) {
