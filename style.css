@@ -169,10 +169,10 @@
 }
   
 
-.stop-scrolling {
+/* .stop-scrolling {
   height: 100%;
   overflow: hidden;
-}
+} */
 
 
 
@@ -193,10 +193,32 @@
   
   
   @media screen and (min-width: 768px) {
+
+  /* Grid Desktop */
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr minmax(80%, 90%) 1fr;
+  }
+
+  nav, main, footer, .desktop {
+    grid-column: 2 / 3;
+  }
   
-   .hamburger {
-        display: none;
-    }
+  nav {
+    /* border: 2px solid plum; */
+    margin: 0;
+    box-shadow: none;
+  }
+
+  /* .sticky {
+    width: 80%;
+    margin: 0 auto;
+  } */
+
+  .hamburger {
+      display: none;
+  }
   
     .logo {
       width: 174px;
@@ -238,6 +260,11 @@
   }
   
   @media screen and (min-width: 1024px) {
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr minmax(75%, 85%) 1fr;
+    }
   
     .desktop {
       width: 38%;
@@ -249,6 +276,11 @@
   }
 
   @media screen and (min-width: 1280px) {
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr minmax(70%, 80%) 1fr;
+    }
 
     .desktop {
       width: 36%;
