@@ -113,6 +113,16 @@ header {
 
 @media (min-width: 576px) {
     body {
+        background-color: linen;
+    }
+    .overlay {
+        width: 65vw;
+    }
+
+}
+
+@media (min-width: 640px) {
+    body {
         background-color: bisque;
     }
     .hamburger, .overlay {
@@ -121,5 +131,4 @@ header {
     .desktop {
         display: block;
     }
-
 }
